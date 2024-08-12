@@ -20,14 +20,16 @@ INSERT INTO artist_genre(artist_genre_id, artist_id, genre_id) VALUES
 	(3, 3, 3),
 	(4, 4, 1),
 	(5, 5, 4),
-	(6, 6, 5);
+	(6, 6, 5),
+	(7, 2, 4);
 
 INSERT INTO album(album_id, album_name, release_year) VALUES
 	(1, 'Bohemian Rhapsody', '2018-10-19'),
 	(2, 'Lust For Life', '2017-07-21'),
 	(3, 'TERRITORY', '2017-01-01'),
 	(4, 'Один на один', '2024-07-19'),
-	(5, 'Soul Surfer. Remastered 2019', '2019-08-05');
+	(5, 'Soul Surfer. Remastered 2019', '2019-08-05'),
+	(7, 'New', '2020-05-02');
 
 INSERT INTO artist_album(artist_album_id, artist_id, album_id) VALUES
 	(1, 1, 1),
@@ -35,7 +37,8 @@ INSERT INTO artist_album(artist_album_id, artist_id, album_id) VALUES
 	(3, 3, 3),
 	(4, 4, 4),
 	(5, 5, 5),
-	(6, 6, 5);
+	(6, 6, 5),
+	(7, 2, 7);
 
 INSERT INTO treck(treck_id, treck_name, duration, album_id) VALUES
 	(1, 'Somebody To Love', 297, 1),
@@ -65,7 +68,18 @@ INSERT INTO treck(treck_id, treck_name, duration, album_id) VALUES
 	(25, 'The Bliss Of Now', 471, 5),
 	(26, 'Entering Godmode', 530, 5),
 	(27, 'Nature Song', 565, 5),
-	(28, 'Starway', 557, 5);
+	(28, 'Starway', 557, 5),
+	(29, 'myself', 215, 4),
+	(30, 'by myself', 220, 4),
+	(31, 'bemy self', 225, 4),
+	(32, 'myself by', 230, 3),
+	(33, 'by myself by', 235, 3),
+	(34, 'beemy', 240, 3),
+	(35, 'premyne', 115, 3),
+	(36, 'my own', 105, 1),
+	(37, 'own my', 300, 1),
+	(38, 'my', 305, 2),
+	(39, 'oh my god', 290, 2);
 	
 INSERT INTO collection(collection_id, collection_name, release_year) VALUES
 	(1, 'Rock', '2018-09-30'),
