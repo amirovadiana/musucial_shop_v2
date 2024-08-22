@@ -63,7 +63,7 @@ SELECT a.artist_name, t.duration FROM artist a
 	JOIN album al ON aa.album_id = al.album_id
 	JOIN treck t ON al.album_id = t.album_id
 WHERE duration = (SELECT min(duration) from treck t
-JOIN artist_album ON aa.album_id = t.album_id);
+JOIN artist_album aa ON aa.album_id = t.album_id);
 
 SELECT a.album_name FROM album a
 JOIN treck t ON a.album_id = t.album_id
